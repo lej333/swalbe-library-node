@@ -6,7 +6,7 @@ const _ = require('lodash');
 const Moment = require('moment');
 
 /*
-* Smart centralized toString function for multiple different types.
+* Smart toString function for multiple different types.
 * */
 const inputToString = (input) => {
   if (_.isFunction(input)) {

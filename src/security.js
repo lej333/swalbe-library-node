@@ -17,6 +17,9 @@ const createHash = (input, cryptoKey) => {
   if (!cryptoKey) {
     throw Boom.badData(Messages.invalidSecret);
   }
+  if (!input) {
+    return '';
+  }
   input = Util.inputToString(input);
   return Crypto.createHmac('sha256', cryptoKey).update(input).digest('hex');
 }
