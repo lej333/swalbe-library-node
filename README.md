@@ -4,5 +4,5 @@ A central helper library for all Node project created by Swalbe/Lej333 to centra
 
 ### Usage
 ```
-
+const { Security, Util } = require('swalbe-library');
 ```
